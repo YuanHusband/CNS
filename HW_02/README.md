@@ -1,10 +1,23 @@
 # Homework_02
 CNS Elkhan Bagirov 7SEP23
 
-### Provision a Virtual Machine
-This tutorial walked me through provisioning. It started off with creating a provisioning script instead of embedding all the provisioning in the Vagrantfile. Instead, we just put the script within the Vagrantfile. This specific provisioning deployed a local webserver.
-![image](https://github.com/YuanHusband/CNS/assets/90392600/4583e8f2-629d-41e7-a9b8-2d2b628549ea)
-![terminal_capture](https://github.com/YuanHusband/CNS/assets/90392600/82ff6631-e40a-40ea-9902-cece75b5a5b5)
+### Lab Overview
+My Docker container investigation journey continues with this homework. The first step is to use HostA as a template from the Docker Compose file. Next, based on my investigation, select a fresh Docker image for the "attacker" computer from Docker Hub. This new container will be added to my Docker Compose file after being configured as necessary. To guarantee this new configuration's operation, including network connectivity and service access, I'll build, deploy, and test it afterward.
+
+Below, I changed the docker-compose.yml to include the new attacker and image.
+
+![dockercomposeml (codechange)](https://github.com/YuanHusband/CNS/assets/90392600/8791ffc3-3d0e-4d45-ae28-145f287e0873)
+
+I then docksh'd into the attacker host and tried pinging the different hosts on the network (only unable to ping internal hosts of router because of firewall).
+
+![pinging and docksh results](https://github.com/YuanHusband/CNS/assets/90392600/6b24ef60-1317-45b3-a557-52361e3b36c2)
+
+Finally, I tested the functionality of this image in providing a easily comprised web app that I logged into with default user and password.
+
+![Network Service Access](https://github.com/YuanHusband/CNS/assets/90392600/cc011320-a94f-4505-837c-8d4b9a251db3)
+
+![Network Service Access_login](https://github.com/YuanHusband/CNS/assets/90392600/edb2f172-f53c-4205-99cb-a4f10732969b)
+
 
 ### Configure the Network
 This tutorial allowed me to establish port forwarding using the Vagrantfile. I used the template and tutorial to change the config for the vm network to be hosted on 4567. From here, I accessed this file from the browser at the local host : portnumber (127.0.0.1/4567).
