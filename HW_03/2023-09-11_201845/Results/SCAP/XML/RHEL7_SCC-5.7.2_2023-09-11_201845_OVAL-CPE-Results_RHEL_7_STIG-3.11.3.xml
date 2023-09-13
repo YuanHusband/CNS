@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2023-09-11_201845,HostName:RHEL7.LOCALDOMAIN,FileType:OVAL CPE Results,StreamName:RHEL_7_STIG-3.11.3,ErrorCount:0,WarnCount:0 -->
+
+<oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#hpux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/hpux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#hpux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/hpux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/unix-system-characteristics-schema.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:ind-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:unix-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:linux-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:win-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows">
+      <oval-res:generator>
+            <oval:product_name>SCAP Compliance Checker</oval:product_name>
+            <oval:product_version>5.7.2</oval:product_version>
+            <oval:schema_version>5.11.2</oval:schema_version>
+            <oval:timestamp>2023-09-11T20:18:57</oval:timestamp>
+      </oval-res:generator>
+      <oval-res:directives>
+            <oval-res:definition_true reported="true" content="full"></oval-res:definition_true>
+            <oval-res:definition_false content="full" reported="true"></oval-res:definition_false>
+            <oval-res:definition_unknown content="full" reported="true"></oval-res:definition_unknown>
+            <oval-res:definition_error content="full" reported="true"></oval-res:definition_error>
+            <oval-res:definition_not_evaluated reported="true" content="full"></oval-res:definition_not_evaluated>
+            <oval-res:definition_not_applicable reported="true" content="full"></oval-res:definition_not_applicable>
+      </oval-res:directives>
+      <oval-def:oval_definitions>
+            <oval-def:generator>
+                  <oval:product_name>repotool</oval:product_name>
+                  <oval:schema_version>5.10</oval:schema_version>
+                  <oval:timestamp>2023-03-28T17:40:58</oval:timestamp>
+            </oval-def:generator>
+            <oval-def:definitions>
+                  <oval-def:definition id="oval:mil.disa.stig.rhel7:def:1" version="2" class="inventory">
+                        <oval-def:metadata>
+                              <oval-def:title>Red Hat Enterprise Linux 7</oval-def:title>
+                              <oval-def:affected family="unix">
+                                    <oval-def:platform>multi_platform_all</oval-def:platform>
+                              </oval-def:affected>
+                              <oval-def:reference ref_id="cpe:/o:redhat:enterprise_linux:7" source="CPE"></oval-def:reference>
+                              <oval-def:reference source="ssg" ref_id="installed_OS_is_rhel7"></oval-def:reference>
+                              <oval-def:description>The operating system installed on the system is
+      Red Hat Enterprise Linux 7</oval-def:description>
+                        </oval-def:metadata>
+                        <oval-def:criteria operator="OR" applicability_check="false">
+                              <oval-def:criteria applicability_check="false" comment="Red Hat Enterpise Virtualization Host is installed">
+                                    <oval-def:criterion comment="redhat-release-virtualization-host RPM package is installed" applicability_check="false" test_ref="oval:mil.disa.stig.rhel7:tst:21"></oval-def:criterion>
+                                    <oval-def:criterion test_ref="oval:mil.disa.stig.rhel7:tst:22" applicability_check="false" comment="Red Hat Enterpise Virtualization Host is based on RHEL 7"></oval-def:criterion>
+                              </oval-def:criteria>
+                              <oval-def:criterion test_ref="oval:mil.disa.stig.rhel7:tst:17" applicability_check="false" comment="RHEL 7 Client is installed"></oval-def:criterion>
+                              <oval-def:criterion comment="RHEL 7 Workstation is installed" applicability_check="false" test_ref="oval:mil.disa.stig.rhel7:tst:18"></oval-def:criterion>
+                              <oval-def:criterion applicability_check="false" test_ref="oval:mil.disa.stig.rhel7:tst:19" comment="RHEL 7 Server is installed"></oval-def:criterion>
+                              <oval-def:criterion comment="RHEL 7 Compute Node is installed" test_ref="oval:mil.disa.stig.rhel7:tst:20" applicability_check="false"></oval-def:criterion>
+                        </oval-def:criteria>
+                  </oval-def:definition>
+            </oval-def:definitions>
+            <oval-def:tests>
+                  <linux-def:rpminfo_test state_operator="AND" id="oval:mil.disa.stig.rhel7:tst:17" check="all" version="1" check_existence="at_least_one_exists" comment="redhat-release-client is version 7">
+                        <linux-def:object object_ref="oval:mil.disa.stig.rhel7:obj:52"></linux-def:object>
+                        <linux-def:state state_ref="oval:mil.disa.stig.rhel7:ste:53"></linux-def:state>
+                  </linux-def:rpminfo_test>
+                  <linux-def:rpminfo_test comment="redhat-release-workstation is version 7" check_existence="at_least_one_exists" version="1" check="all" state_operator="AND" id="oval:mil.disa.stig.rhel7:tst:18">
+                        <linux-def:object object_ref="oval:mil.disa.stig.rhel7:obj:54"></linux-def:object>
+                        <linux-def:state state_ref="oval:mil.disa.stig.rhel7:ste:55"></linux-def:state>
+                  </linux-def:rpminfo_test>
+                  <linux-def:rpminfo_test comment="redhat-release-server is version 7" check_existence="at_least_one_exists" check="all" version="1" state_operator="AND" id="oval:mil.disa.stig.rhel7:tst:19">
+                        <linux-def:object object_ref="oval:mil.disa.stig.rhel7:obj:56"></linux-def:object>
+                        <linux-def:state state_ref="oval:mil.disa.stig.rhel7:ste:57"></linux-def:state>
+                  </linux-def:rpminfo_test>
+                  <linux-def:rpminfo_test comment="redhat-release-computenode is version 7" check_existence="at_least_one_exists" version="1" check="all" state_operator="AND" id="oval:mil.disa.stig.rhel7:tst:20">
+                        <linux-def:object object_ref="oval:mil.disa.stig.rhel7:obj:58"></linux-def:object>
+                        <linux-def:state state_ref="oval:mil.disa.stig.rhel7:ste:59"></linux-def:state>
+                  </linux-def:rpminfo_test>
+                  <linux-def:rpminfo_test id="oval:mil.disa.stig.rhel7:tst:21" state_operator="AND" version="1" check="all" check_existence="only_one_exists" comment="redhat-release-virtualization-host RPM package is installed">
+                        <linux-def:object object_ref="oval:mil.disa.stig.rhel7:obj:60"></linux-def:object>
+                  </linux-def:rpminfo_test>
+                  <ind-def:textfilecontent54_test check_existence="at_least_one_exists" comment="RHEVH base RHEL is version 7" state_operator="AND" id="oval:mil.disa.stig.rhel7:tst:22" check="all" version="1">
+                        <ind-def:object object_ref="oval:mil.disa.stig.rhel7:obj:61"></ind-def:object>
+                        <ind-def:state state_ref="oval:mil.disa.stig.rhel7:ste:62"></ind-def:state>
+                  </ind-def:textfilecontent54_test>
+            </oval-def:tests>
+            <oval-def:objects>
+                  <linux-def:rpminfo_object id="oval:mil.disa.stig.rhel7:obj:52" version="1">
+                        <linux-def:name>redhat-release-client</linux-def:name>
+                  </linux-def:rpminfo_object>
+                  <linux-def:rpminfo_object version="1" id="oval:mil.disa.stig.rhel7:obj:54">
+                        <linux-def:name>redhat-release-workstation</linux-def:name>
+                  </linux-def:rpminfo_object>
+                  <linux-def:rpminfo_object version="1" id="oval:mil.disa.stig.rhel7:obj:56">
+                        <linux-def:name>redhat-release-server</linux-def:name>
+                  </linux-def:rpminfo_object>
+                  <linux-def:rpminfo_object version="1" id="oval:mil.disa.stig.rhel7:obj:58">
+                        <linux-def:name>redhat-release-computenode</linux-def:name>
+                  </linux-def:rpminfo_object>
+                  <linux-def:rpminfo_object version="1" id="oval:mil.disa.stig.rhel7:obj:60">
+                        <linux-def:name>redhat-release-virtualization-host</linux-def:name>
+                  </linux-def:rpminfo_object>
+                  <ind-def:textfilecontent54_object version="1" id="oval:mil.disa.stig.rhel7:obj:61">
+                        <ind-def:filepath>/etc/redhat-release</ind-def:filepath>
+                        <ind-def:pattern operation="pattern match">^Red Hat Enterprise Linux release (\d)\.\d+$</ind-def:pattern>
+                        <ind-def:instance operation="greater than or equal" datatype="int">1</ind-def:instance>
+                  </ind-def:textfilecontent54_object>
+            </oval-def:objects>
+            <oval-def:states>
+                  <linux-def:rpminfo_state version="1" id="oval:mil.disa.stig.rhel7:ste:53">
+                        <linux-def:version operation="pattern match">^7.*$</linux-def:version>
+                  </linux-def:rpminfo_state>
+                  <linux-def:rpminfo_state version="1" id="oval:mil.disa.stig.rhel7:ste:55">
+                        <linux-def:version operation="pattern match">^7.*$</linux-def:version>
+                  </linux-def:rpminfo_state>
+                  <linux-def:rpminfo_state version="1" id="oval:mil.disa.stig.rhel7:ste:57">
+                        <linux-def:version operation="pattern match">^7.*$</linux-def:version>
+                  </linux-def:rpminfo_state>
+                  <linux-def:rpminfo_state version="1" id="oval:mil.disa.stig.rhel7:ste:59">
+                        <linux-def:version operation="pattern match">^7.*$</linux-def:version>
+                  </linux-def:rpminfo_state>
+                  <ind-def:textfilecontent54_state version="1" id="oval:mil.disa.stig.rhel7:ste:62">
+                        <ind-def:subexpression operation="pattern match">7</ind-def:subexpression>
+                  </ind-def:textfilecontent54_state>
+            </oval-def:states>
+      </oval-def:oval_definitions>
+      <oval-res:results>
+            <oval-res:system>
+                  <oval-res:definitions>
+                        <oval-res:definition definition_id="oval:mil.disa.stig.rhel7:def:1" result="true" version="2">
+                              <oval-res:criteria result="true" operator="OR" applicability_check="false">
+                                    <oval-res:criteria result="false" applicability_check="false" operator="AND">
+                                          <oval-res:criterion version="1" applicability_check="false" result="false" test_ref="oval:mil.disa.stig.rhel7:tst:21"></oval-res:criterion>
+                                          <oval-res:criterion version="1" applicability_check="false" result="false" test_ref="oval:mil.disa.stig.rhel7:tst:22"></oval-res:criterion>
+                                    </oval-res:criteria>
+                                    <oval-res:criterion version="1" test_ref="oval:mil.disa.stig.rhel7:tst:17" result="false" applicability_check="false"></oval-res:criterion>
+                                    <oval-res:criterion version="1" applicability_check="false" result="false" test_ref="oval:mil.disa.stig.rhel7:tst:18"></oval-res:criterion>
+                                    <oval-res:criterion version="1" test_ref="oval:mil.disa.stig.rhel7:tst:19" result="true" applicability_check="false"></oval-res:criterion>
+                                    <oval-res:criterion version="1" applicability_check="false" test_ref="oval:mil.disa.stig.rhel7:tst:20" result="false"></oval-res:criterion>
+                              </oval-res:criteria>
+                        </oval-res:definition>
+                  </oval-res:definitions>
+                  <oval-res:tests>
+                        <oval-res:test test_id="oval:mil.disa.stig.rhel7:tst:21" check="all" version="1" state_operator="AND" check_existence="only_one_exists" result="false">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                        <oval-res:test state_operator="AND" check_existence="at_least_one_exists" result="false" version="1" test_id="oval:mil.disa.stig.rhel7:tst:22" check="all">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                        <oval-res:test check="all" test_id="oval:mil.disa.stig.rhel7:tst:17" version="1" state_operator="AND" check_existence="at_least_one_exists" result="false">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                        <oval-res:test state_operator="AND" check_existence="at_least_one_exists" result="false" test_id="oval:mil.disa.stig.rhel7:tst:18" check="all" version="1">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                        <oval-res:test state_operator="AND" check_existence="at_least_one_exists" result="true" test_id="oval:mil.disa.stig.rhel7:tst:19" check="all" version="1">
+                              <oval-res:tested_item result="true" item_id="1"></oval-res:tested_item>
+                        </oval-res:test>
+                        <oval-res:test state_operator="AND" check_existence="at_least_one_exists" result="false" test_id="oval:mil.disa.stig.rhel7:tst:20" check="all" version="1">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                  </oval-res:tests>
+                  <oval-sc:oval_system_characteristics>
+                        <oval-sc:generator>
+                              <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                              <oval:product_version>5.7.2</oval:product_version>
+                              <oval:schema_version>5.11.2</oval:schema_version>
+                              <oval:timestamp>2023-09-11T20:18:57</oval:timestamp>
+                        </oval-sc:generator>
+                        <oval-sc:system_info>
+                              <oval-sc:os_name>RedHatEnterpriseServer</oval-sc:os_name>
+                              <oval-sc:os_version>7.9</oval-sc:os_version>
+                              <oval-sc:architecture>x86_64</oval-sc:architecture>
+                              <oval-sc:primary_host_name>RHEL7</oval-sc:primary_host_name>
+                              <oval-sc:interfaces>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>lo</oval-sc:interface_name>
+                                          <oval-sc:ip_address>127.0.0.1</oval-sc:ip_address>
+                                          <oval-sc:mac_address>00:00:00:00:00:00</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>eth0</oval-sc:interface_name>
+                                          <oval-sc:ip_address>10.0.2.15</oval-sc:ip_address>
+                                          <oval-sc:mac_address>08:00:27:22:7d:1d</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                              </oval-sc:interfaces>
+                              <con:asset-identification xmlns:con="http://scap.nist.gov/schema/scap/constructs/1.2">
+                                    <arf:object-ref ref-id="SCC_RHEL7" xmlns:arf="http://scap.nist.gov/schema/asset-reporting-format/1.1" />
+                              </con:asset-identification>
+                        </oval-sc:system_info>
+                        <oval-sc:collected_objects>
+                              <oval-sc:object flag="does not exist" version="1" id="oval:mil.disa.stig.rhel7:obj:60"></oval-sc:object>
+                              <oval-sc:object id="oval:mil.disa.stig.rhel7:obj:61" flag="does not exist" version="1"></oval-sc:object>
+                              <oval-sc:object id="oval:mil.disa.stig.rhel7:obj:52" flag="does not exist" version="1"></oval-sc:object>
+                              <oval-sc:object id="oval:mil.disa.stig.rhel7:obj:54" flag="does not exist" version="1"></oval-sc:object>
+                              <oval-sc:object id="oval:mil.disa.stig.rhel7:obj:56" flag="complete" version="1">
+                                    <oval-sc:reference item_ref="1"></oval-sc:reference>
+                              </oval-sc:object>
+                              <oval-sc:object id="oval:mil.disa.stig.rhel7:obj:58" version="1" flag="does not exist"></oval-sc:object>
+                        </oval-sc:collected_objects>
+                        <oval-sc:system_data>
+                              <linux-sc:rpminfo_item id="1" status="exists">
+                                    <linux-sc:name>redhat-release-server</linux-sc:name>
+                                    <linux-sc:arch>x86_64</linux-sc:arch>
+                                    <linux-sc:epoch>(none)</linux-sc:epoch>
+                                    <linux-sc:release>3.el7</linux-sc:release>
+                                    <linux-sc:version datatype="version">7.9</linux-sc:version>
+                                    <linux-sc:evr datatype="evr_string">0:7.9-3.el7</linux-sc:evr>
+                                    <linux-sc:signature_keyid>199e2f91fd431d51</linux-sc:signature_keyid>
+                                    <linux-sc:extended_name>redhat-release-server-(none):7.9-3.el7.x86_64</linux-sc:extended_name>
+                                    <linux-sc:filepath status="not collected"></linux-sc:filepath>
+                              </linux-sc:rpminfo_item>
+                        </oval-sc:system_data>
+                  </oval-sc:oval_system_characteristics>
+            </oval-res:system>
+      </oval-res:results>
+</oval-res:oval_results>
