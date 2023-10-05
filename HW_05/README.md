@@ -43,4 +43,14 @@ Below demonstrates the ability to SSH into the jumpbox without a password: a suc
 
  ### Brute Forcing Passwords
 
+I first logged into the jumpbox and changed the "Bagirov" user's password to "password."
 
+![passwd_change](https://github.com/YuanHusband/CNS/assets/90392600/79784ce5-4493-466b-8218-07a4551fe786)
+
+I then installed maaaaz/thc-hydra-windows off GitHub. I also installed the quested password list. I used the first command off the hydra website to brute force the password specifying user Bagirov, 6 threads, the password list, and the SSH network.
+
+![hydracommand](https://github.com/YuanHusband/CNS/assets/90392600/ee2f1057-6f7c-4555-a285-a9a569c169d9)
+
+Below is the output from the command successfully determining my poor password selection!
+
+![hydraoutput](https://github.com/YuanHusband/CNS/assets/90392600/780e84f0-29ca-4028-b2ff-9cbddc57c0b2)
