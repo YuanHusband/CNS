@@ -1,32 +1,20 @@
-# Homework_04
-CNS Elkhan Bagirov 28SEP23
+# Homework_06
+CNS Elkhan Bagirov 19OCT23
 
-### HW Overview
+### Intro to Splunk Overview
 
-This homework delves into SSH authentication and security. It includes SSH basics, key-based authentication, and simulated password cracking.
+I chose the "Intro to Splunk" elearning course. It covered a broad range of material, including an intro to Splunk achitecture and basic functions. It gave depth on defining Splunk apps and also demonstrating user roles wiithin. This is essential to navigate Splunk effectivey.
 
-### Learning More About SSH
+During course progression, I was instructed on basic searches, time ranges, and how to save search results. I gained further understanding on how to work with events and share different searches with others. This included search result exports and selecting different search modes.
 
-Step 6 of exercise 10.2 entailed displaying currently logged in users on "serverb." The output displays a log of the root user's access.
+A highlight of exploring Search Processing Language was the use of wildcards, case sensitivity, and boolean operations for advance dsearches. I delved into the search langauge and query "best practices."
 
-![10 2_step6](https://github.com/YuanHusband/CNS/assets/90392600/af68cf28-900a-410c-bdee-5b34bd6e7d22)
+I understood knowledge objects: data interpretation, classifications, enrichment, normalization, and data models.
 
-Step 12 of exercise 10.2 is an execution of a command remotely. Uniquely, we are not accessing the interactive shell and are instead tacking the command at the end of the "ssh" command.
+The course concluded with lessons on reports and dashboards. Searches are no longer temporary, demonstration through models and reports have endless possibilities. They have insightful visualizations and fun designs to showcase data.
 
-![10 2_step12](https://github.com/YuanHusband/CNS/assets/90392600/b2fe360b-8c85-47ea-9f6f-6a60a661f02e)
+This course set me up with a string Splunk foundation for data queries and reporting.
 
-Step 4 of exercise 10.4 has us send a public key out to a user on a different machine.
+### Splunk Certificate
 
-![10 4_step4](https://github.com/YuanHusband/CNS/assets/90392600/dd5b9a9a-5ddd-431b-a6b9-1fe349e96f13)
-
-Step 9 of exercise 10.4 demonstrates the ability for another user to try to gain access to the private key. A passphrase protects the private key. 
-
-![10 4_step9](https://github.com/YuanHusband/CNS/assets/90392600/90155a24-f896-4648-a397-99977f4e9ff2)
-
-### Applying Key-Based Authentication
-
-
-
- ### Brute Forcing Passwords
-
-
+Below is a certifate proving my completion of the Splunk training course.
