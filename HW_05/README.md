@@ -1,5 +1,5 @@
-# Homework_04
-CNS Elkhan Bagirov 28SEP23
+# Homework_05
+CNS Elkhan Bagirov 5OCT23
 
 ### HW Overview
 
@@ -25,8 +25,32 @@ Step 9 of exercise 10.4 demonstrates the ability for another user to try to gain
 
 ### Applying Key-Based Authentication
 
+I first generated a local public key.
 
+![keygen](https://github.com/YuanHusband/CNS/assets/90392600/2a98652a-2fc2-4c7d-916b-516fdaf1970e)
+
+Then, I used an alternative method than the redhat academy ssh-copy-id to move this public key over (command was not Windows supported). I got the information of the public key below.
+
+![gettingpublicsshkey](https://github.com/YuanHusband/CNS/assets/90392600/fc34f8e8-8b13-42b8-8e23-1c185865f789)
+
+I then SSHed into the jumpbox and created a text document under ~/.ssh. I added the public key from before (copy-paste).
+
+![authorized_key_creation](https://github.com/YuanHusband/CNS/assets/90392600/8ba4ae48-eeeb-4b28-822a-fc8bdc5a980a)
+
+Below demonstrates the ability to SSH into the jumpbox without a password: a successful key-based authentication!
+
+![keybasedlogin](https://github.com/YuanHusband/CNS/assets/90392600/94f89315-2608-4070-8b0d-8526ebf68172)
 
  ### Brute Forcing Passwords
 
+I first logged into the jumpbox and changed the "Bagirov" user's password to "password."
 
+![passwd_change](https://github.com/YuanHusband/CNS/assets/90392600/79784ce5-4493-466b-8218-07a4551fe786)
+
+I then installed maaaaz/thc-hydra-windows off GitHub. I also installed the quested password list. I used the first command off the hydra website to brute force the password specifying user Bagirov, 6 threads, the password list, and the SSH network.
+
+![hydracommand](https://github.com/YuanHusband/CNS/assets/90392600/ee2f1057-6f7c-4555-a285-a9a569c169d9)
+
+Below is the output from the command successfully determining my poor password selection!
+
+![hydraoutput](https://github.com/YuanHusband/CNS/assets/90392600/780e84f0-29ca-4028-b2ff-9cbddc57c0b2)
