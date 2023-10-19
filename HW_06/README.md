@@ -18,3 +18,4 @@ This course set me up with a string Splunk foundation for data queries and repor
 ### Splunk Certificate
 
 Below is a certifate proving my completion of the Splunk training course.
+
