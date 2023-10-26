@@ -1,12 +1,36 @@
-# Homework_07
-CNS Elkhan Bagirov 26OCT23
+# Homework_06
+CNS Elkhan Bagirov 19OCT23
 
-### Research a Vulnerable Service: MemuPlay
+### Intro to Splunk Overview
 
-https://www.exploit-db.com/exploits/46437
+I chose the "Intro to Splunk" elearning course. It covered a broad range of material, including an intro to Splunk achitecture and basic functions. It gave depth on defining Splunk apps and also demonstrating user roles wiithin. This is essential to navigate Splunk effectivey.
 
-I wanted to research vulnerabilities within an application-based service. On the exploit database, I narrowed results to verified sources of vulnerable apps. I chose Memu Play, an android emulator for PC (primarily for gaming purposes). The operating system required is Windows 7 and above with software version 6.0.7 being verified but future versions also including the vulnerability.
+During course progression, I was instructed on basic searches, time ranges, and how to save search results. I gained further understanding on how to work with events and share different searches with others. This included search result exports and selecting different search modes.
 
-The vulnerability within Memu Play is insecure file permissions. To exploit this, malicious actors can escalate privileges from a baseline: local, low privilege access with restart capabilities. An attack vector would be to replace the MemuService.exe file within the directory with a malicious file that connects back to attacker's system to give higher privileges. This executable would run upon a restart of the victim's machine and the reverse shell opens and confirms authority.
+A highlight of exploring Search Processing Language was the use of wildcards, case sensitivity, and boolean operations for advance dsearches. I delved into the search langauge and query "best practices."
 
-The software could defend against this by restricting file permissions and performing regular security auditing. This is why cyber students from just "chmod 777"-ing everything.
+I understood knowledge objects: data interpretation, classifications, enrichment, normalization, and data models.
+
+The course concluded with lessons on reports and dashboards. Searches are no longer temporary, demonstration through models and reports have endless possibilities. They have insightful visualizations and fun designs to showcase data.
+
+This course set me up with a string Splunk foundation for data queries and reporting.
+
+### Splunk Certificate
+
+Below is a certifate proving my completion of the Splunk training course.
+
+### Description of Windows Event ID Excluded
+
+Windows Event ID: 4625
+
+This signifies a logon failure event. It generates when there is an unsuccessful attempt at gaining access to a Windows system. It is an important security event that can identify/investigate potential breaches. This is triggered in a few ways:
+  -incorrect login credentials
+  -user account does not exist
+  -password expired
+  -multiple failed attempts
+
+### Screenshot of input.conf
+
+This input.conf config file was placed in a directory under my SplunkUniversalForwarder. This allows me to manipulate exactly what information is forwarded to my Splunk Enterprise.
+
+![inputs screenshot](https://github.com/YuanHusband/CNS/assets/90392600/ac3f7a70-7924-40ed-9796-0ffc22706874)
