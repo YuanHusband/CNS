@@ -5,7 +5,9 @@ CNS Elkhan Bagirov 16NOV23
 
 Sherlock is a kali Linux tool written in python 3. This tool finds usernames across social networks.
 
-The tool can be found at: https://www.kali.org/tools/sherlock/.
+The tool can be found at: https://www.kali.org/tools/sherlock/. Below is it installed on my Kali Linux VM.
+
+![image](https://github.com/YuanHusband/CNS/assets/90392600/b7a2023d-d512-4ed1-9204-d839c51bdf93)
 
 Sherlock is open source and exposes usernames by checking databases from thousands of popular account-based websites. This includes anything from Reddit to Quizlet to Fortnite to Redbubble.
 
@@ -20,3 +22,5 @@ Sherlock would also be an amazing tool to combine with a cracked password with a
 Below will explain a use of Sherlock as a stand alone task. This task communicates to thousands of user-based web services but does not interact with network hosts in the traditional sense.
 
 Here is a screenshot of me using Sherlock on a typical LT Quarry username.
+
+![image](https://github.com/YuanHusband/CNS/assets/90392600/170c74c5-8fbb-441a-b219-ce42019fa490)
